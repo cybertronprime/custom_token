@@ -4,7 +4,7 @@ import {ERC20} from  "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 
 contract OurToken is ERC20{
-    constructor(uint256 initialSupply) ERC20("OurToken", "OTK"){
+    constructor(uint256 initialSupply) ERC20("USD Coin", "USDC"){
         _mint(msg.sender, initialSupply);
     }
 
