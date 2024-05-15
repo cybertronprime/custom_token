@@ -40,6 +40,9 @@ ifeq ($(findstring --network sepolia,$(ARGS)),--network sepolia)
 endif	
 ifeq ($(findstring --network bera,$(ARGS)),--network bera)
 	NETWORK_ARGS := --rpc-url $(BERA_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast  -vvvv	
+endif	
+ifeq ($(findstring --network saga,$(ARGS)),--network saga)
+	NETWORK_ARGS := --rpc-url $(SAGA_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast  -vvvv		
 endif
 
 deploy:
